@@ -49,9 +49,9 @@ void setup()
     sendData("AT+SMTPAUTH=1,\"EMAIL_ID\",\"EMAIL_SMTP_PWD\"", 1000, DEBUG);
 
     // Sender Address
-    sendData("AT+SMTPFROM=\"15694500215@163.com\",\"xbw\"", 1000, DEBUG);
+    sendData("AT+SMTPFROM=\"from@163.com\",\"from\"", 1000, DEBUG);
     // Recipient Address
-    sendData("AT+SMTPRCPT=0,0,\"15694500215@163.com\",\"xbw\"", 1000, DEBUG);
+    sendData("AT+SMTPRCPT=0,0,\"to@163.com\",\"to\"", 1000, DEBUG);
     // Subject
     sendData("AT+SMTPSUB=\"Test\"", 1000, DEBUG);
     // Set body length
